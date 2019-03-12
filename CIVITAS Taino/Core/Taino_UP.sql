@@ -1,15 +1,17 @@
 /*
 	UI
-	Credits: ChimpanG
+	Authors: ChimpanG
 */
 
 -----------------------------------------------
 -- Types
------------------------------------------------		
+-----------------------------------------------	
+
 INSERT INTO Types
-		(Type,									Kind				)
-VALUES	('PROJECT_CVS_TAINO_UP',				'KIND_PROJECT'		),
-		('MODTYPE_CVS_TAINO_UP_GRANT_ENVOY',	'KIND_MODIFIER'		);
+		(Type,										Kind				)
+VALUES	('PROJECT_CVS_TAINO_UP',					'KIND_PROJECT'		),
+		('BUILDING_CVS_TAINO_UP_DUMMY',				'KIND_BUILDING'		),
+		('MODTYPE_CVS_TAINO_UP_ADJUST_INFLUENCE',	'KIND_MODIFIER'		);
 		
 -----------------------------------------------
 -- Projects
@@ -42,7 +44,7 @@ SELECT	'PROJECT_CVS_TAINO_UP', -- ProjectType
 		PopupText,
 		Cost,
 		CostProgressionModel,
-		CostProgressionParam1 * 2, -- CostProgressionParam1
+		CostProgressionParam1,
 		NULL, -- PrereqTech
 		NULL, -- PrereqCivic
 		'DISTRICT_CVS_TAINO_UI', -- PrereqDistrict
@@ -75,33 +77,41 @@ VALUES	('PROJECT_CVS_TAINO_UP',	'GREAT_PERSON_CLASS_WRITER',	5,			'COST_PROGRESS
 		('PROJECT_CVS_TAINO_UP',	'GREAT_PERSON_CLASS_MUSICIAN',	5,			'COST_PROGRESSION_GAME_PROGRESS',	800						);
 
 -----------------------------------------------
--- ProjectCompletionModifiers
------------------------------------------------
-
-INSERT INTO ProjectCompletionModifiers
-		(ProjectType,				ModifierId								)
-VALUES	('PROJECT_CVS_TAINO_UP',	'MODIFIER_CVS_TAINO_UP_GRANT_ENVOY'		);
-
------------------------------------------------
 -- DynamicModifiers
 -----------------------------------------------
 
 INSERT INTO	DynamicModifiers
-		(ModifierType,							CollectionType,		EffectType							)
-VALUES	('MODTYPE_CVS_TAINO_UP_GRANT_ENVOY',	'COLLECTION_OWNER',	'EFFECT_GRANT_INFLUENCE_TOKEN'		);
+		(ModifierType,								CollectionType,		EffectType									)
+VALUES	('MODTYPE_CVS_TAINO_UP_ADJUST_INFLUENCE',	'COLLECTION_OWNER',	'EFFECT_ADJUST_INFLUENCE_POINTS_PER_TURN'	);
 
 -----------------------------------------------
 -- Modifiers
 -----------------------------------------------
 
 INSERT INTO	Modifiers
-		(ModifierId,							ModifierType,							SubjectRequirementSetId,	RunOnce,	Permanent	)
-VALUES	('MODIFIER_CVS_TAINO_UP_GRANT_ENVOY',	'MODTYPE_CVS_TAINO_UP_GRANT_ENVOY',		NULL,						1,			1			);
+		(ModifierId,								ModifierType,								SubjectRequirementSetId,	RunOnce,	Permanent	)
+VALUES	('MODIFIER_CVS_TAINO_UP_ADJUST_INFLUENCE',	'MODTYPE_CVS_TAINO_UP_ADJUST_INFLUENCE',	NULL,						1,			1			);
 
 -----------------------------------------------
 -- ModifierArguments
 -----------------------------------------------
 
 INSERT INTO	ModifierArguments
-		(ModifierId,							Name,		Value	)
-VALUES	('MODIFIER_CVS_TAINO_UP_GRANT_ENVOY',	'Amount',	1		);
+		(ModifierId,								Name,		Value	)
+VALUES	('MODIFIER_CVS_TAINO_UP_ADJUST_INFLUENCE',	'Amount',	1		);
+
+-----------------------------------------------
+-- Buildings
+-----------------------------------------------
+
+INSERT INTO Buildings
+		(BuildingType,					Name,									Description,									PrereqDistrict,			Cost,	MustPurchase,	EnabledByReligion,	InternalOnly)
+VALUES	('BUILDING_CVS_TAINO_UP_DUMMY',	'LOC_BUILDING_CVS_TAINO_UP_DUMMY_NAME',	'LOC_BUILDING_CVS_TAINO_UP_DUMMY_DESCRIPTION',	'DISTRICT_CITY_CENTER',	1,		1,				1,					1			);
+
+-----------------------------------------------
+-- BuildingModifiers
+-----------------------------------------------
+
+INSERT INTO BuildingModifiers
+		(BuildingType,					ModifierId									)
+VALUES	('BUILDING_CVS_TAINO_UP_DUMMY',	'MODIFIER_CVS_TAINO_UP_ADJUST_INFLUENCE'	);

@@ -14,8 +14,8 @@
 		<Element>
 			<ConsumerName text="Units"/>
 			<ArtDefDependencyPaths>
-				<Element text="Units.artdef"/>
 				<Element text="Cultures.artdef"/>
+				<Element text="Units.artdef"/>
 			</ArtDefDependencyPaths>
 			<LibraryDependencies>
 				<Element text="Unit"/>
@@ -35,11 +35,9 @@
 		<Element>
 			<ConsumerName text="Landmarks"/>
 			<ArtDefDependencyPaths>
-				<Element text="Landmarks.artdef"/>
 				<Element text="Civilizations.artdef"/>
 				<Element text="Cultures.artdef"/>
-				<Element text="Improvements.artdef"/>
-				<Element text="StrategicView.artdef"/>
+				<Element text="Landmarks.artdef"/>
 			</ArtDefDependencyPaths>
 			<LibraryDependencies>
 				<Element text="CityBuildings"/>
@@ -77,9 +75,8 @@
 		<Element>
 			<ConsumerName text="StrategicView_Sprite"/>
 			<ArtDefDependencyPaths>
-				<Element text="StrategicView.artdef"/>
-				<Element text="Improvements.artdef"/>
 				<Element text="Districts.artdef"/>
+				<Element text="StrategicView.artdef"/>
 				<Element text="Landmarks.artdef"/>
 				<Element text="Cultures.artdef"/>
 			</ArtDefDependencyPaths>
@@ -276,12 +273,7 @@
 		</Element>
 		<Element>
 			<ConsumerName text="Improvements"/>
-			<ArtDefDependencyPaths>
-				<Element text="Improvements.artdef"/>
-				<Element text="StrategicView.artdef"/>
-				<Element text="Landmarks.artdef"/>
-				<Element text="Cultures.artdef"/>
-			</ArtDefDependencyPaths>
+			<ArtDefDependencyPaths/>
 			<LibraryDependencies/>
 			<LoadsLibraries>false</LoadsLibraries>
 		</Element>
@@ -290,10 +282,9 @@
 			<ArtDefDependencyPaths>
 				<Element text="Civilizations.artdef"/>
 				<Element text="Cultures.artdef"/>
-				<Element text="Improvements.artdef"/>
 				<Element text="Districts.artdef"/>
-				<Element text="StrategicView.artdef"/>
 				<Element text="Landmarks.artdef"/>
+				<Element text="StrategicView.artdef"/>
 			</ArtDefDependencyPaths>
 			<LibraryDependencies/>
 			<LoadsLibraries>false</LoadsLibraries>
@@ -301,10 +292,9 @@
 		<Element>
 			<ConsumerName text="StrategicView_Translate"/>
 			<ArtDefDependencyPaths>
-				<Element text="Improvements.artdef"/>
 				<Element text="Districts.artdef"/>
-				<Element text="StrategicView.artdef"/>
 				<Element text="Landmarks.artdef"/>
+				<Element text="StrategicView.artdef"/>
 				<Element text="Cultures.artdef"/>
 			</ArtDefDependencyPaths>
 			<LibraryDependencies/>
@@ -314,22 +304,18 @@
 			<ConsumerName text="Audio"/>
 			<ArtDefDependencyPaths>
 				<Element text="Civilizations.artdef"/>
-				<Element text="Units.artdef"/>
-				<Element text="Improvements.artdef"/>
 				<Element text="Districts.artdef"/>
-				<Element text="Leaders.artdef"/>
-				<Element text="Cultures.artdef"/>
-				<Element text="StrategicView.artdef"/>
+				<Element text="Units.artdef"/>
 				<Element text="Landmarks.artdef"/>
+				<Element text="StrategicView.artdef"/>
+				<Element text="Cultures.artdef"/>
 			</ArtDefDependencyPaths>
 			<LibraryDependencies/>
 			<LoadsLibraries>false</LoadsLibraries>
 		</Element>
 		<Element>
 			<ConsumerName text="LeaderLighting"/>
-			<ArtDefDependencyPaths>
-				<Element text="Leaders.artdef"/>
-			</ArtDefDependencyPaths>
+			<ArtDefDependencyPaths/>
 			<LibraryDependencies>
 				<Element text="LeaderLighting"/>
 				<Element text="ColorKey"/>
@@ -338,9 +324,7 @@
 		</Element>
 		<Element>
 			<ConsumerName text="Leaders"/>
-			<ArtDefDependencyPaths>
-				<Element text="Leaders.artdef"/>
-			</ArtDefDependencyPaths>
+			<ArtDefDependencyPaths/>
 			<LibraryDependencies>
 				<Element text="Leader"/>
 				<Element text="LeaderLighting"/>
@@ -350,9 +334,7 @@
 		</Element>
 		<Element>
 			<ConsumerName text="LeaderFallback"/>
-			<ArtDefDependencyPaths>
-				<Element text="LeaderFallbacks.artdef"/>
-			</ArtDefDependencyPaths>
+			<ArtDefDependencyPaths/>
 			<LibraryDependencies>
 				<Element text="LeaderFallback"/>
 			</LibraryDependencies>
@@ -366,12 +348,7 @@
 		</Element>
 		<Element>
 			<ConsumerName text="IndirectGrid"/>
-			<ArtDefDependencyPaths>
-				<Element text="Improvements.artdef"/>
-				<Element text="StrategicView.artdef"/>
-				<Element text="Landmarks.artdef"/>
-				<Element text="Cultures.artdef"/>
-			</ArtDefDependencyPaths>
+			<ArtDefDependencyPaths/>
 			<LibraryDependencies/>
 			<LoadsLibraries>false</LoadsLibraries>
 		</Element>
@@ -425,12 +402,7 @@
 		</Element>
 		<Element>
 			<ConsumerName text="UnitSimulation"/>
-			<ArtDefDependencyPaths>
-				<Element text="Improvements.artdef"/>
-				<Element text="StrategicView.artdef"/>
-				<Element text="Landmarks.artdef"/>
-				<Element text="Cultures.artdef"/>
-			</ArtDefDependencyPaths>
+			<ArtDefDependencyPaths/>
 			<LibraryDependencies/>
 			<LoadsLibraries>false</LoadsLibraries>
 		</Element>
@@ -446,6 +418,10 @@
 	</SystemDependencies>
 	<ArtDefDependencies>
 		<Element>
+			<ArtDefPath text="Cultures.artdef"/>
+			<ArtDefDependencyPaths/>
+		</Element>
+		<Element>
 			<ArtDefPath text="Units.artdef"/>
 			<ArtDefDependencyPaths>
 				<Element text="Units.artdef"/>
@@ -453,11 +429,11 @@
 			</ArtDefDependencyPaths>
 		</Element>
 		<Element>
-			<ArtDefPath text="Cultures.artdef"/>
+			<ArtDefPath text="Clutter.artdef"/>
 			<ArtDefDependencyPaths/>
 		</Element>
 		<Element>
-			<ArtDefPath text="Clutter.artdef"/>
+			<ArtDefPath text="Civilizations.artdef"/>
 			<ArtDefDependencyPaths/>
 		</Element>
 		<Element>
@@ -465,18 +441,6 @@
 			<ArtDefDependencyPaths>
 				<Element text="Landmarks.artdef"/>
 				<Element text="Cultures.artdef"/>
-			</ArtDefDependencyPaths>
-		</Element>
-		<Element>
-			<ArtDefPath text="Civilizations.artdef"/>
-			<ArtDefDependencyPaths/>
-		</Element>
-		<Element>
-			<ArtDefPath text="Improvements.artdef"/>
-			<ArtDefDependencyPaths>
-				<Element text="StrategicView.artdef"/>
-				<Element text="Improvements.artdef"/>
-				<Element text="Landmarks.artdef"/>
 			</ArtDefDependencyPaths>
 		</Element>
 		<Element>
@@ -492,14 +456,6 @@
 				<Element text="StrategicView.artdef"/>
 				<Element text="Districts.artdef"/>
 			</ArtDefDependencyPaths>
-		</Element>
-		<Element>
-			<ArtDefPath text="Leaders.artdef"/>
-			<ArtDefDependencyPaths/>
-		</Element>
-		<Element>
-			<ArtDefPath text="LeaderFallbacks.artdef"/>
-			<ArtDefDependencyPaths/>
 		</Element>
 	</ArtDefDependencies>
 	<LibraryDependencies>
@@ -537,9 +493,7 @@
 		</Element>
 		<Element>
 			<LibraryName text="LeaderFallback"/>
-			<PackageDependencies>
-				<Element text="LeaderFallbacks.blp"/>
-			</PackageDependencies>
+			<PackageDependencies/>
 		</Element>
 		<Element>
 			<LibraryName text="LeaderLighting"/>
@@ -577,7 +531,6 @@
 			<LibraryName text="StrategicView_Sprite"/>
 			<PackageDependencies>
 				<Element text="strategicview/strategicview_districts.blp"/>
-				<Element text="strategicview/strategicview_improvements.blp"/>
 			</PackageDependencies>
 		</Element>
 		<Element>

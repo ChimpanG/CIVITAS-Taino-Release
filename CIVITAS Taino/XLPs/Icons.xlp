@@ -10,46 +10,6 @@
 	<m_PackageName text="UI/Icons"/>
 	<m_Entries>
 		<Element>
-			<m_EntryID text="LEADER_CVS_ANACAONA_BACKGROUND"/>
-			<m_ObjectName text="LEADER_CVS_ANACAONA_BACKGROUND"/>
-		</Element>
-		<Element>
-			<m_EntryID text="LEADER_CVS_ANACAONA_ICON_256"/>
-			<m_ObjectName text="LEADER_CVS_ANACAONA_ICON_256"/>
-		</Element>
-		<Element>
-			<m_EntryID text="LEADER_CVS_ANACAONA_ICON_45"/>
-			<m_ObjectName text="LEADER_CVS_ANACAONA_ICON_45"/>
-		</Element>
-		<Element>
-			<m_EntryID text="LEADER_CVS_ANACAONA_NEUTRAL"/>
-			<m_ObjectName text="LEADER_CVS_ANACAONA_NEUTRAL"/>
-		</Element>
-		<Element>
-			<m_EntryID text="LEADER_CVS_ANACAONA_UI_ICON_200"/>
-			<m_ObjectName text="LEADER_CVS_ANACAONA_UI_ICON_200"/>
-		</Element>
-		<Element>
-			<m_EntryID text="LEADER_CVS_ANACAONA_UI_ICON_256"/>
-			<m_ObjectName text="LEADER_CVS_ANACAONA_UI_ICON_256"/>
-		</Element>
-		<Element>
-			<m_EntryID text="LEADER_CVS_ANACAONA_UI_ICON_38"/>
-			<m_ObjectName text="LEADER_CVS_ANACAONA_UI_ICON_38"/>
-		</Element>
-		<Element>
-			<m_EntryID text="LEADER_CVS_ANACAONA_UI_ICON_40"/>
-			<m_ObjectName text="LEADER_CVS_ANACAONA_UI_ICON_40"/>
-		</Element>
-		<Element>
-			<m_EntryID text="LEADER_CVS_ANACAONA_UI_ICON_50"/>
-			<m_ObjectName text="LEADER_CVS_ANACAONA_UI_ICON_50"/>
-		</Element>
-		<Element>
-			<m_EntryID text="LEADER_CVS_ANACAONA_UI_ICON_80"/>
-			<m_ObjectName text="LEADER_CVS_ANACAONA_UI_ICON_80"/>
-		</Element>
-		<Element>
 			<m_EntryID text="CIVILIZATION_CVS_TAINO_ICON_22"/>
 			<m_ObjectName text="CIVILIZATION_CVS_TAINO_ICON_22"/>
 		</Element>
@@ -154,42 +114,6 @@
 			<m_ObjectName text="CIVILIZATION_CVS_TAINO_UU_PORTRAIT_95"/>
 		</Element>
 		<Element>
-			<m_EntryID text="LEADER_CVS_ANACAONA_PORTRAIT_256"/>
-			<m_ObjectName text="LEADER_CVS_ANACAONA_PORTRAIT_256"/>
-		</Element>
-		<Element>
-			<m_EntryID text="LEADER_CVS_ANACAONA_PORTRAIT_32"/>
-			<m_ObjectName text="LEADER_CVS_ANACAONA_PORTRAIT_32"/>
-		</Element>
-		<Element>
-			<m_EntryID text="LEADER_CVS_ANACAONA_PORTRAIT_45"/>
-			<m_ObjectName text="LEADER_CVS_ANACAONA_PORTRAIT_45"/>
-		</Element>
-		<Element>
-			<m_EntryID text="LEADER_CVS_ANACAONA_PORTRAIT_50"/>
-			<m_ObjectName text="LEADER_CVS_ANACAONA_PORTRAIT_50"/>
-		</Element>
-		<Element>
-			<m_EntryID text="LEADER_CVS_ANACAONA_PORTRAIT_55"/>
-			<m_ObjectName text="LEADER_CVS_ANACAONA_PORTRAIT_55"/>
-		</Element>
-		<Element>
-			<m_EntryID text="LEADER_CVS_ANACAONA_PORTRAIT_64"/>
-			<m_ObjectName text="LEADER_CVS_ANACAONA_PORTRAIT_64"/>
-		</Element>
-		<Element>
-			<m_EntryID text="LEADER_CVS_ANACAONA_PORTRAIT_80"/>
-			<m_ObjectName text="LEADER_CVS_ANACAONA_PORTRAIT_80"/>
-		</Element>
-		<Element>
-			<m_EntryID text="CVS_ANACAONA_1"/>
-			<m_ObjectName text="CVS_ANACAONA_1"/>
-		</Element>
-		<Element>
-			<m_EntryID text="CVS_ANACAONA_4"/>
-			<m_ObjectName text="CVS_ANACAONA_4"/>
-		</Element>
-		<Element>
 			<m_EntryID text="CIVILIZATION_CVS_TAINO_UI_ICON_128"/>
 			<m_ObjectName text="CIVILIZATION_CVS_TAINO_UI_ICON_128"/>
 		</Element>
@@ -214,20 +138,16 @@
 			<m_ObjectName text="CIVILIZATION_CVS_TAINO_UI_ICON_80"/>
 		</Element>
 		<Element>
-			<m_EntryID text="CIVILIZATION_CVS_TAINO_FONTICON"/>
-			<m_ObjectName text="CIVILIZATION_CVS_TAINO_FONTICON"/>
-		</Element>
-		<Element>
 			<m_EntryID text="Moment_Infrastructure_CVS_Batey"/>
 			<m_ObjectName text="Moment_Infrastructure_CVS_Batey"/>
 		</Element>
 		<Element>
-			<m_EntryID text="Moment_Infrastructure_CVS_Conuco"/>
-			<m_ObjectName text="Moment_Infrastructure_CVS_Conuco"/>
-		</Element>
-		<Element>
 			<m_EntryID text="Moment_UniqueUnit_CVS_Macana"/>
 			<m_ObjectName text="Moment_UniqueUnit_CVS_Macana"/>
+		</Element>
+		<Element>
+			<m_EntryID text="CIVILIZATION_CVS_TAINO_ICON_45"/>
+			<m_ObjectName text="CIVILIZATION_CVS_TAINO_ICON_45"/>
 		</Element>
 	</m_Entries>
 	<m_AllowedPlatforms>

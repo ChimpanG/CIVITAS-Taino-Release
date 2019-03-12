@@ -1,6 +1,6 @@
 /*
 	UU
-	Credits: ChimpanG
+	Authors: ChimpanG
 */
 
 -----------------------------------------------
@@ -13,7 +13,7 @@ VALUES	('TRAIT_CIVILIZATION_CVS_TAINO_UU',		'KIND_TRAIT'		),
 		('UNIT_CVS_TAINO_UU',					'KIND_UNIT'			),
 		('ABILITY_CVS_TAINO_UU',				'KIND_ABILITY'		),
 		('MODTYPE_CVS_TAINO_UU_GRANT_YIELD',	'KIND_MODIFIER'		),
-		('MODTYPE_CVS_TAINO_UU_GRANT_PROMOTION','KIND_MODIFIER'		);
+		('MODTYPE_CVS_TAINO_UU_DISABLE_UNIT',	'KIND_MODIFIER'		);
 
 -----------------------------------------------
 -- Tags
@@ -85,7 +85,7 @@ SELECT	'UNIT_CVS_TAINO_UU',	-- UnitType
 		Cost,
 		PurchaseYield,
 		AdvisorType,
-		Combat + 8, -- Combat
+		Combat, -- Combat
 		BaseSightRange,
 		ZoneOfControl,
 		Domain,
@@ -133,22 +133,29 @@ INSERT INTO UnitAbilities
 VALUES	('ABILITY_CVS_TAINO_UU',	'LOC_ABILITY_CVS_TAINO_UU_NAME',	'LOC_ABILITY_CVS_TAINO_UU_DESCRIPTION'	);
 
 -----------------------------------------------
+-- TraitModifiers
+-----------------------------------------------
+
+INSERT INTO TraitModifiers
+		(TraitType,							ModifierId								)
+VALUES	('TRAIT_CIVILIZATION_CVS_TAINO_UU',	'MODIFIER_CVS_TAINO_UU_DISABLE_SCOUT'	);
+
+-----------------------------------------------
 -- UnitAbilityModifiers
 -----------------------------------------------
 		
 INSERT INTO UnitAbilityModifiers
 		(UnitAbilityType,			ModifierId							)
-VALUES	('ABILITY_CVS_TAINO_UU',	'MODIFIER_CVS_TAINO_UU_POST_FAITH'	),
-		('ABILITY_CVS_TAINO_UU',	'MODIFIER_CVS_TAINO_UU_RANGER'		);
+VALUES	('ABILITY_CVS_TAINO_UU',	'MODIFIER_CVS_TAINO_UU_POST_FAITH'	);
 
 -----------------------------------------------
 -- DynamicModifiers
 -----------------------------------------------
 
 INSERT INTO	DynamicModifiers
-		(ModifierType,								CollectionType,				EffectType								)
-VALUES	('MODTYPE_CVS_TAINO_UU_GRANT_YIELD',		'COLLECTION_UNIT_COMBAT',	'EFFECT_ADJUST_UNIT_POST_COMBAT_YIELD'	),
-		('MODTYPE_CVS_TAINO_UU_GRANT_PROMOTION',	'COLLECTION_PLAYER_UNITS',	'EFFECT_GRANT_PROMOTION'				);
+		(ModifierType,							CollectionType,				EffectType									)
+VALUES	('MODTYPE_CVS_TAINO_UU_GRANT_YIELD',	'COLLECTION_UNIT_COMBAT',	'EFFECT_ADJUST_UNIT_POST_COMBAT_YIELD'		),
+		('MODTYPE_CVS_TAINO_UU_DISABLE_UNIT',	'COLLECTION_OWNER',			'EFFECT_ADJUST_PLAYER_UNIT_BUILD_DISABLED'	);
 
 -----------------------------------------------
 -- Modifiers
@@ -157,14 +164,22 @@ VALUES	('MODTYPE_CVS_TAINO_UU_GRANT_YIELD',		'COLLECTION_UNIT_COMBAT',	'EFFECT_A
 INSERT INTO	Modifiers
 		(ModifierId,							ModifierType,							SubjectRequirementSetId,	Permanent,	RunOnce	)
 VALUES	('MODIFIER_CVS_TAINO_UU_POST_FAITH',	'MODTYPE_CVS_TAINO_UU_GRANT_YIELD',		NULL,						0,			0		),
-		('MODIFIER_CVS_TAINO_UU_RANGER',		'MODTYPE_CVS_TAINO_UU_GRANT_PROMOTION',	NULL,						1,			1		);
+		('MODIFIER_CVS_TAINO_UU_DISABLE_SCOUT',	'MODTYPE_CVS_TAINO_UU_DISABLE_UNIT',	NULL,						0,			0		);
 
 -----------------------------------------------
 -- ModifierArguments
 -----------------------------------------------
 
 INSERT INTO	ModifierArguments		
-		(ModifierId,							Name,						Value				)
-VALUES	('MODIFIER_CVS_TAINO_UU_POST_FAITH',	'YieldType',				'YIELD_FAITH'		),
-		('MODIFIER_CVS_TAINO_UU_POST_FAITH',	'PercentDefeatedStrength',	50					),
-		('MODIFIER_CVS_TAINO_UU_RANGER',		'PromotionType',			'PROMOTION_RANGER'	);
+		(ModifierId,							Name,						Value			)
+VALUES	('MODIFIER_CVS_TAINO_UU_POST_FAITH',	'YieldType',				'YIELD_FAITH'	),
+		('MODIFIER_CVS_TAINO_UU_POST_FAITH',	'PercentDefeatedStrength',	50				),
+		('MODIFIER_CVS_TAINO_UU_DISABLE_SCOUT',	'UnitType',					'UNIT_SCOUT'	);
+
+-----------------------------------------------
+-- MomentIllustrations
+-----------------------------------------------
+
+INSERT INTO MomentIllustrations
+		(MomentIllustrationType,			MomentDataType,		GameDataType,			Texture							)
+VALUES	('MOMENT_ILLUSTRATION_UNIQUE_UNIT',	'MOMENT_DATA_UNIT',	'UNIT_CVS_TAINO_UU',	'Moment_UniqueUnit_CVS_Macana'	);
