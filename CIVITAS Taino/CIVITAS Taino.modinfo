@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="e6175fc8-e018-4d21-b52a-f6d5aeb292a5" version="1">
+  <Properties>
+    <Name>CIVITAS [ICON_Government] Taíno</Name>
+    <Description>Adds the Taíno as a playable civilization under Anacaona.</Description>
+    <Teaser>Adds the Taíno as a playable civilization under Anacaona.</Teaser>
+    <Authors>ChimpanG, SeelingCat, Chrisy15, pOkiehl, SailorCat, TheCrazyScotsman</Authors>
+    <SpecialThanks>&lt;3 Leugi</SpecialThanks>
+  </Properties>
+  <ActionCriteria>
+    <Criteria id="XP1">
+        <GameCoreInUse>Expansion1</GameCoreInUse>
+    </Criteria>
+  </ActionCriteria>
+  <FrontEndActions>
+    <UpdateText id="Taino_Setup_Text">
+      <File>Core/Civilization/Taino_Localisation.sql</File>
+      <File>Core/Leader/Anacaona_Localisation.sql</File>
+    </UpdateText>
+    <UpdateIcons id="Taino_Setup_Icons">
+      <File>Core/Civilization/Taino_Icons.sql</File>
+      <File>Core/Leader/Anacaona_Icons.sql</File>
+    </UpdateIcons>
+    <UpdateDatabase id="Taino_Setup_DB">
+      <Properties>
+        <LoadOrder>100</LoadOrder>
+      </Properties>
+      <File>Core/Leader/Anacaona_Config.sql</File>
+    </UpdateDatabase>
+    <UpdateArt id="ArtDep">
+      <File>CIVITAS [ICON_Government] Taino.dep</File>
+    </UpdateArt>
+  </FrontEndActions>
+  <InGameActions>
+    <UpdateDatabase id="Taino_DB">
+      <Properties>
+        <LoadOrder>101</LoadOrder>
+      </Properties>
+      <File>Core/Civilization/Taino_Civilization.sql</File>
+      <File>Core/Civilization/Taino_UA.sql</File>
+      <File>Core/Civilization/Taino_UI.sql</File>
+      <File>Core/Civilization/Taino_UU.sql</File>
+      <File>Core/Civilization/Taino_UP.sql</File>
+    </UpdateDatabase>
+    <UpdateText id="Taino_Text">
+      <File>Core/Civilization/Taino_Localisation.sql</File>
+    </UpdateText>
+    <UpdateIcons id="Taino_Icons">
+      <File>Core/Civilization/Taino_Icons.sql</File>
+    </UpdateIcons>
+    <UpdateDatabase id="Anacaona_DB">
+      <Properties>
+        <LoadOrder>102</LoadOrder>
+      </Properties>
+      <File>Core/Leader/Anacaona_Leader.sql</File>
+      <File>Core/Leader/Anacaona_UA.sql</File>
+      <File>Core/Leader/Anacaona_UI.sql</File>
+      <File>Core/Leader/Anacaona_Agenda.sql</File>
+      <File>Core/Leader/Anacaona_Strategy.sql</File>
+    </UpdateDatabase>
+    <UpdateText id="Anacaona_Text">
+      <File>Core/Leader/Anacaona_Localisation.sql</File>
+    </UpdateText>
+    <UpdateIcons id="Anacaona_Icons">
+      <File>Core/Leader/Anacaona_Icons.sql</File>
+    </UpdateIcons>
+    <UpdateDatabase id="ModSupport_DB">
+      <Properties>
+        <LoadOrder>104</LoadOrder>
+      </Properties>
+      <File>Core/ModSupport/RwF/RwF.sql</File>
+      <File>Core/ModSupport/Historical Religions/Historical Religions.sql</File>
+      <File>Core/ModSupport/YNAEMP/YNAEMP.sql</File>
+    </UpdateDatabase>
+    <UpdateText id="ModSupport">
+      <File>Core/ModSupport/RwF/RwF Text.xml</File>
+    </UpdateText>
+    <UpdateArt id="ArtDep">
+      <File>CIVITAS [ICON_Government] Taino.dep</File>
+    </UpdateArt>
+    <UpdateDatabase id="Taino_XP1_DB">
+      <Properties>
+        <LoadOrder>103</LoadOrder>
+      </Properties>
+      <Criteria>XP1</Criteria>
+      <File>Core/XP1/Taino_XP1.sql</File>
+    </UpdateDatabase>
+  </InGameActions>
+  <Files>
+    <File>ArtDefs/Civilizations.artdef</File>
+    <File>ArtDefs/Cultures.artdef</File>
+    <File>ArtDefs/Districts.artdef</File>
+    <File>ArtDefs/Improvements.artdef</File>
+    <File>ArtDefs/Landmarks.artdef</File>
+    <File>ArtDefs/LeaderFallbacks.artdef</File>
+    <File>ArtDefs/Leaders.artdef</File>
+    <File>ArtDefs/StrategicView.artdef</File>
+    <File>ArtDefs/Units.artdef</File>
+    <File>Assets/DIS_CVS_BATEY_Base_01.ast</File>
+    <File>Assets/DIS_CVS_BATEY_Base_02.ast</File>
+    <File>Assets/DIS_CVS_BATEY_Base_03.ast</File>
+    <File>Assets/DIS_CVS_BATEY_Base_04.ast</File>
+    <File>Assets/IMP_CVS_Conuco.ast</File>
+    <File>CIVITAS [ICON_Government] Taino.dep</File>
+    <File>Core/Civilization/Taino_Civilization.sql</File>
+    <File>Core/Civilization/Taino_Icons.sql</File>
+    <File>Core/Civilization/Taino_Localisation.sql</File>
+    <File>Core/Civilization/Taino_UA.sql</File>
+    <File>Core/Civilization/Taino_UI.sql</File>
+    <File>Core/Civilization/Taino_UP.sql</File>
+    <File>Core/Civilization/Taino_UU.sql</File>
+    <File>Core/Leader/Anacaona_Agenda.sql</File>
+    <File>Core/Leader/Anacaona_Config.sql</File>
+    <File>Core/Leader/Anacaona_Icons.sql</File>
+    <File>Core/Leader/Anacaona_Leader.sql</File>
+    <File>Core/Leader/Anacaona_Localisation.sql</File>
+    <File>Core/Leader/Anacaona_Strategy.sql</File>
+    <File>Core/Leader/Anacaona_UA.sql</File>
+    <File>Core/Leader/Anacaona_UI.sql</File>
+    <File>Core/ModSupport/Historical Religions/Historical Religions.sql</File>
+    <File>Core/ModSupport/RwF/RwF Text.xml</File>
+    <File>Core/ModSupport/RwF/RwF.sql</File>
+    <File>Core/ModSupport/YNAEMP/YNAEMP.sql</File>
+    <File>Core/XP1/Taino_XP1.sql</File>
+    <File>Platforms/MacOS/BLPs/landmarks/tilebases.blp</File>
+    <File>Platforms/MacOS/BLPs/LeaderFallbacks.blp</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Ancient_01_B</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Ancient_01_FOW</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Ancient_01_H</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Ancient_PIL_B</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Ancient_PIL_H</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Classical_01_B</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Classical_01_H</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Classical_PIL_B</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Classical_PIL_H</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Industrial_01_FOW</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Decals_Parts_Ancient_01_B_null</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Decals_Parts_Ancient_PIL_B_null</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Decals_Parts_Classical_01_B_null</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Decals_Parts_Classical_PIL_B_null</File>
+    <File>Platforms/MacOS/BLPs/strategicview/strategicview_districts.blp</File>
+    <File>Platforms/MacOS/BLPs/strategicview/strategicview_improvements.blp</File>
+    <File>Platforms/MacOS/BLPs/UI/Icons.blp</File>
+    <File>Platforms/Windows/BLPs/landmarks/tilebases.blp</File>
+    <File>Platforms/Windows/BLPs/LeaderFallbacks.blp</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Ancient_01_B</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Ancient_01_FOW</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Ancient_01_H</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Ancient_PIL_B</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Ancient_PIL_H</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Classical_01_B</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Classical_01_H</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Classical_PIL_B</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Classical_PIL_H</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Industrial_01_FOW</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Decals_Parts_Ancient_01_B_null</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Decals_Parts_Ancient_PIL_B_null</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Decals_Parts_Classical_01_B_null</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Decals_Parts_Classical_PIL_B_null</File>
+    <File>Platforms/Windows/BLPs/strategicview/strategicview_districts.blp</File>
+    <File>Platforms/Windows/BLPs/strategicview/strategicview_improvements.blp</File>
+    <File>Platforms/Windows/BLPs/UI/Icons.blp</File>
+    <File>XLPs/Icons.xlp</File>
+    <File>XLPs/LeaderFallbacks.xlp</File>
+    <File>XLPs/StrategicView_Improvements.xlp</File>
+    <File>XLPs/Tilebases.xlp</File>
+  </Files>
+</Mod>
