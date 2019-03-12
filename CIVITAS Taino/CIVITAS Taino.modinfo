@@ -89,8 +89,10 @@
     <File>ArtDefs/Cultures.artdef</File>
     <File>ArtDefs/Districts.artdef</File>
     <File>ArtDefs/Landmarks.artdef</File>
+    <File>ArtDefs/Overlay.artdef</File>
     <File>ArtDefs/StrategicView.artdef</File>
     <File>ArtDefs/Units.artdef</File>
+    <File>ArtDefs/UserInterface.artdef</File>
     <File>Assets/DIS_CVS_BATEY_Base_01.ast</File>
     <File>Assets/DIS_CVS_BATEY_Base_02.ast</File>
     <File>Assets/DIS_CVS_BATEY_Base_03.ast</File>
@@ -107,6 +109,9 @@
     <File>Core/Taino_UP.sql</File>
     <File>Core/Taino_UU.sql</File>
     <File>Platforms/MacOS/BLPs/landmarks/tilebases.blp</File>
+    <File>Platforms/MacOS/BLPs/LensAssets.blp</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_CIVILIZATION_CVS_TAINO_OVERLAY</File>
+    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_CIVILIZATION_CVS_TAINO_PRESSURE_2</File>
     <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Ancient_01_B</File>
     <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Ancient_01_FOW</File>
     <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Ancient_01_H</File>
@@ -124,6 +129,9 @@
     <File>Platforms/MacOS/BLPs/strategicview/strategicview_districts.blp</File>
     <File>Platforms/MacOS/BLPs/UI/Icons.blp</File>
     <File>Platforms/Windows/BLPs/landmarks/tilebases.blp</File>
+    <File>Platforms/Windows/BLPs/LensAssets.blp</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_CIVILIZATION_CVS_TAINO_OVERLAY</File>
+    <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_CIVILIZATION_CVS_TAINO_PRESSURE_2</File>
     <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Ancient_01_B</File>
     <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Ancient_01_FOW</File>
     <File>Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Ancient_01_H</File>
@@ -141,6 +149,7 @@
     <File>Platforms/Windows/BLPs/strategicview/strategicview_districts.blp</File>
     <File>Platforms/Windows/BLPs/UI/Icons.blp</File>
     <File>XLPs/Icons.xlp</File>
+    <File>XLPs/LensAssets.xlp</File>
     <File>XLPs/StrategicView_Districts.xlp</File>
     <File>XLPs/Tilebases.xlp</File>
   </Files>
